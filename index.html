@@ -1,50 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>KCC ITM Clone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KCCITM Clone</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Announcement Bar -->
+
+<div class="ticker">
+Admissions Open 2026 | Apply Now | Top Recruiters Visit Campus
+</div>
+
+<!-- Header -->
+
 <header>
-<h1>KCC Institute of Technology and Management</h1>
+
+<div class="logo">KCC Institute</div>
+
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Courses</a>
-<a href="#">Contact</a>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li class="dropdown">
+<a href="#">Programs</a>
+
+<ul class="dropdown-menu">
+
+<li>B.Tech</li>
+<li>MBA</li>
+<li>BBA</li>
+<li>BCA</li>
+
+</ul>
+
+</li>
+
+<li><a href="#">Placements</a></li>
+<li><a href="#">Campus Life</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
 </nav>
+
 </header>
 
+<!-- Hero Section -->
+
 <section class="hero">
-<h2>Welcome to KCC ITM</h2>
-<p>Providing quality education and innovation.</p>
-<button onclick="showMessage()">Learn More</button>
+
+<img src="images/logo.png" class="slide active">
+<img src="images/banner.jpg" class="slide">
+<img src="images/campus.jpg" class="slide">
+
+<div class="hero-text">
+
+<h1>Where Tomorrow Starts Today</h1>
+
+<p>Top Engineering & Management Institute</p>
+
+<button id="applyBtn">Apply Now</button>
+
+</div>
+
 </section>
 
-<section class="courses">
-<h2>Our Courses</h2>
+<!-- Programs -->
 
-<div class="course">
+<section class="programs">
+
+<h2>Our Programs</h2>
+
+<div class="grid">
+
+<div class="card">
 <h3>B.Tech</h3>
-<p>Engineering programs with modern technology.</p>
+<p>Computer Science | AI | Data Science</p>
 </div>
 
-<div class="course">
+<div class="card">
 <h3>MBA</h3>
-<p>Business management with industry exposure.</p>
+<p>Marketing | Finance | HR</p>
 </div>
 
-<div class="course">
+<div class="card">
+<h3>BBA</h3>
+<p>Business Administration</p>
+</div>
+
+<div class="card">
 <h3>BCA</h3>
-<p>Computer applications and programming.</p>
+<p>Computer Applications</p>
+</div>
+
 </div>
 
 </section>
+
+<!-- Stats -->
+
+<section class="stats">
+
+<div class="stat">
+<h2 class="counter" data-target="12000">0</h2>
+<p>Students</p>
+</div>
+
+<div class="stat">
+<h2 class="counter" data-target="600">0</h2>
+<p>Placements</p>
+</div>
+
+<div class="stat">
+<h2 class="counter" data-target="350">0</h2>
+<p>Faculty</p>
+</div>
+
+</section>
+
+<!-- Recruiters -->
+
+<section class="placements">
+
+<h2>Top Recruiters</h2>
+
+<div class="logos">
+
+<div>Amazon</div>
+<div>Infosys</div>
+<div>TCS</div>
+<div>Wipro</div>
+<div>HCL</div>
+
+</div>
+
+</section>
+
+<!-- Campus -->
+
+<section class="campus">
+
+<h2>Life at Campus</h2>
+
+<div class="gallery">
+
+<img src="images/campus1.jpg">
+<img src="images/campus2.jpg">
+<img src="images/campus3.jpg">
+
+</div>
+
+</section>
+
+<!-- Popup Form -->
+
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<h2>Apply for Admission</h2>
+
+<form>
+
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<button id="closePopup">Close</button>
+
+</div>
+
+</div>
+
+<!-- Footer -->
 
 <footer>
-<p>© 2026 KCC ITM Clone Project</p>
+
+<p>© 2026 KCCITM Clone Project</p>
+
 </footer>
 
 <script src="script.js"></script>
